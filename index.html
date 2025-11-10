@@ -14,18 +14,18 @@
         * {
             font-family: 'Pretendard', sans-serif;
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
         
         html, body {
             width: 100%;
             max-width: 100%;
             overflow-x: hidden;
-            margin: 0;
-            padding: 0;
         }
         
         .bg-overlay {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(30, 58, 138, 0.6));
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(30, 58, 138, 0.55));
             position: absolute;
             top: 0;
             left: 0;
@@ -40,7 +40,7 @@
         }
         
         .hero {
-            background-image: url("http://led-korea.com/Back1.jpg');
+            background-image: url('http://led-korea.com/Back1.jpg');
             background-size: cover;
             background-position: center;
             min-height: 100vh;
@@ -50,24 +50,24 @@
         }
         
         .service-card {
-            transition: all 0.4s ease;
-            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
         }
         
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
             border-color: #3B82F6;
         }
         
         .partnership-img {
-            transition: all 0.4s ease;
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
         
         .partnership-img:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
         
         .call-button {
@@ -76,6 +76,7 @@
             right: 20px;
             z-index: 999;
             animation: pulse 2s infinite;
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
         }
         
         @keyframes pulse {
@@ -88,6 +89,12 @@
             bottom: 20px;
             right: 20px;
             z-index: 999;
+            box-shadow: 0 4px 15px rgba(250, 204, 21, 0.4);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
         }
         
         .section-title::after {
@@ -105,7 +112,6 @@
         @media (max-width: 768px) {
             .hero {
                 min-height: 100vh;
-                padding-top: 80px;
             }
             
             .hero h1 {
@@ -123,10 +129,6 @@
             
             .nav-links {
                 display: none;
-            }
-            
-            .mobile-menu {
-                display: block !important;
             }
             
             .section-title {
@@ -151,14 +153,6 @@
                 padding: 0.75rem !important;
             }
             
-            .call-button .text-sm {
-                font-size: 0.7rem !important;
-            }
-            
-            .call-button .text-xl {
-                font-size: 1rem !important;
-            }
-            
             .kakao-chat {
                 bottom: 15px;
                 right: 10px;
@@ -172,26 +166,30 @@
     <!-- Hero Section -->
     <div class="hero">
         <div class="bg-overlay"></div>
-        <div class="content w-full px-4">
-            <nav class="absolute top-0 left-0 w-full py-4 bg-black bg-opacity-30">
-                <div class="container mx-auto px-4 flex justify-between items-center">
-                    <a href="#" class="text-white text-xl md:text-3xl font-bold">
-                        LK조명 <span class="text-blue-400">LED-Korea</span>
-                    </a>
-                    <div class="flex items-center gap-3">
-                        <div class="nav-links hidden md:flex items-center space-x-6">
-                            <a href="#services" class="text-white hover:text-blue-300">제품</a>
-                            <a href="#partnership" class="text-white hover:text-blue-300">파트너십</a>
-                            <a href="#contact" class="text-white hover:text-blue-300">문의</a>
-                        </div>
-                        <a href="index_en.html" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm">
-                            English
+        <div class="content w-full">
+            <!-- Navigation -->
+            <nav class="absolute top-0 left-0 w-full py-3 md:py-4" style="background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px);">
+                <div class="container mx-auto px-4">
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-white text-xl md:text-3xl font-bold">
+                            LK조명 <span class="text-blue-400">LED-Korea</span>
                         </a>
+                        <div class="flex items-center gap-3 md:gap-6">
+                            <div class="nav-links hidden md:flex items-center gap-6">
+                                <a href="#services" class="text-white hover:text-blue-300 transition-colors">제품</a>
+                                <a href="#partnership" class="text-white hover:text-blue-300 transition-colors">파트너십</a>
+                                <a href="#contact" class="text-white hover:text-blue-300 transition-colors">문의</a>
+                            </div>
+                            <a href="index_en.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm transition-colors">
+                                English
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
             
-            <div class="container mx-auto">
+            <!-- Hero Content -->
+            <div class="container mx-auto px-4" style="padding-top: 100px;">
                 <div class="max-w-4xl">
                     <h1 class="text-4xl md:text-7xl font-bold text-white leading-tight mb-4 md:mb-6">
                         LED 조명의<br>혁신을 선도합니다
@@ -201,10 +199,10 @@
                         최고 품질의 LED 가로등 및 조명 솔루션 제공
                     </p>
                     <div class="flex flex-col sm:flex-row gap-3 md:gap-4">
-                        <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg text-center">
+                        <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg text-center transition-colors">
                             제품 둘러보기
                         </a>
-                        <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-600 py-3 px-8 rounded-lg text-center">
+                        <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-600 py-3 px-8 rounded-lg text-center transition-colors">
                             견적 문의
                         </a>
                     </div>
@@ -217,17 +215,17 @@
     <section id="services" class="py-12 md:py-24 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12 md:mb-20">
-                <h2 class="section-title text-3xl md:text-5xl font-bold text-gray-900 mb-4 relative inline-block">
+                <h2 class="section-title text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                     제품 및 서비스
                 </h2>
-                <p class="text-base md:text-xl text-gray-600 max-w-3xl mx-auto mt-6">
+                <p class="text-base md:text-xl text-gray-600 max-w-3xl mx-auto mt-8">
                     LED-Korea는 첨단 기술과 디자인을 결합하여<br class="md:hidden">
                     에너지 효율적이고 환경친화적인 조명 솔루션을 제공합니다
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
-                <div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl p-6 md:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="service-card bg-white rounded-2xl p-6 md:p-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
                         <i class="fas fa-road text-3xl md:text-4xl text-white"></i>
                     </div>
@@ -237,7 +235,7 @@
                     </p>
                 </div>
                 
-                <div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl p-6 md:p-8">
+                <div class="service-card bg-white rounded-2xl p-6 md:p-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
                         <i class="fas fa-ruler-combined text-3xl md:text-4xl text-white"></i>
                     </div>
@@ -247,7 +245,7 @@
                     </p>
                 </div>
                 
-                <div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl p-6 md:p-8">
+                <div class="service-card bg-white rounded-2xl p-6 md:p-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 bg-green-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
                         <i class="fas fa-leaf text-3xl md:text-4xl text-white"></i>
                     </div>
@@ -257,7 +255,7 @@
                     </p>
                 </div>
                 
-                <div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl p-6 md:p-8">
+                <div class="service-card bg-white rounded-2xl p-6 md:p-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
                         <i class="fas fa-cogs text-3xl md:text-4xl text-white"></i>
                     </div>
@@ -267,7 +265,7 @@
                     </p>
                 </div>
                 
-                <div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl p-6 md:p-8">
+                <div class="service-card bg-white rounded-2xl p-6 md:p-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 bg-purple-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
                         <i class="fas fa-certificate text-3xl md:text-4xl text-white"></i>
                     </div>
@@ -277,7 +275,7 @@
                     </p>
                 </div>
                 
-                <div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl p-6 md:p-8">
+                <div class="service-card bg-white rounded-2xl p-6 md:p-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
                         <i class="fas fa-wrench text-3xl md:text-4xl text-white"></i>
                     </div>
@@ -294,17 +292,17 @@
     <section id="partnership" class="py-12 md:py-24 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12 md:mb-20">
-                <h2 class="section-title text-3xl md:text-5xl font-bold text-gray-900 mb-4 relative inline-block">
+                <h2 class="section-title text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                     글로벌 파트너십
                 </h2>
-                <p class="text-base md:text-xl text-gray-700 max-w-3xl mx-auto mt-6">
+                <p class="text-base md:text-xl text-gray-700 max-w-3xl mx-auto mt-8">
                     세계 유수의 기업들과의 전략적 파트너십을 통해<br>
                     글로벌 시장에서 한국의 LED 기술력을 인정받고 있습니다
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
-                <div class="partnership-img bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div class="partnership-img bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
                     <img src="http://led-korea.com/Jv01.jpg" alt="글로벌 수출 계약" class="w-full h-60 md:h-80 object-cover">
                     <div class="p-4 md:p-6">
                         <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2">글로벌 수출 계약</h3>
@@ -312,7 +310,7 @@
                     </div>
                 </div>
                 
-                <div class="partnership-img bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div class="partnership-img bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
                     <img src="http://led-korea.com/Jv02.jpg" alt="기술 제휴 협약" class="w-full h-60 md:h-80 object-cover">
                     <div class="p-4 md:p-6">
                         <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2">기술 제휴 협약</h3>
@@ -320,7 +318,7 @@
                     </div>
                 </div>
                 
-                <div class="partnership-img bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div class="partnership-img bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
                     <img src="http://led-korea.com/Jv03.jpg" alt="국제 시장 확대" class="w-full h-60 md:h-80 object-cover">
                     <div class="p-4 md:p-6">
                         <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2">국제 시장 확대</h3>
@@ -329,7 +327,7 @@
                 </div>
             </div>
             
-            <div class="bg-white rounded-2xl shadow-2xl p-6 md:p-12 max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl p-6 md:p-12 max-w-4xl mx-auto" style="box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                     <div>
                         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">대표이사 직접 소통</h3>
@@ -358,10 +356,10 @@
     <section id="contact" class="py-12 md:py-24 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12 md:mb-16">
-                <h2 class="section-title text-3xl md:text-5xl font-bold text-gray-900 mb-4 relative inline-block">
+                <h2 class="section-title text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                     문의하기
                 </h2>
-                <p class="text-base md:text-xl text-gray-600 max-w-3xl mx-auto mt-6">
+                <p class="text-base md:text-xl text-gray-600 max-w-3xl mx-auto mt-8">
                     LED 조명 솔루션에 대해 궁금하신 점이 있으신가요?<br>
                     전화, 카카오톡 또는 문의 양식으로 언제든지 연락 주세요
                 </p>
@@ -432,7 +430,7 @@
     </footer>
 
     <!-- Call Button -->
-    <a href="tel:1688-8011" class="call-button flex items-center bg-green-500 hover:bg-green-600 px-4 py-3 rounded-full shadow-2xl text-white">
+    <a href="tel:1688-8011" class="call-button flex items-center bg-green-500 hover:bg-green-600 px-4 py-3 rounded-full text-white transition-colors">
         <i class="fas fa-phone-alt text-lg mr-2"></i>
         <div>
             <div class="text-xs font-medium">전국 대표번호</div>
@@ -441,7 +439,7 @@
     </a>
 
     <!-- Kakao Talk Button -->
-    <a href="https://open.kakao.com/o/srUHq4kh" target="_blank" class="kakao-chat flex items-center justify-center bg-yellow-400 hover:bg-yellow-500 w-14 h-14 md:w-16 md:h-16 rounded-full shadow-2xl">
+    <a href="https://open.kakao.com/o/srUHq4kh" target="_blank" class="kakao-chat flex items-center justify-center bg-yellow-400 hover:bg-yellow-500 w-14 h-14 md:w-16 md:h-16 rounded-full transition-colors">
         <i class="fas fa-comment text-2xl md:text-3xl text-gray-900"></i>
     </a>
 
