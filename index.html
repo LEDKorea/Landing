@@ -149,6 +149,19 @@
         .service-card:hover .feature-icon {
             transform: rotateY(360deg);
         }
+    
+        @media (max-width: 640px) {
+            .hero {
+                min-height: 80vh;
+                height: auto;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+            }
+            nav a {
+                font-size: 0.95rem;
+            }
+        }
+
     </style>
 </head>
 <body class="bg-gray-50">
@@ -157,11 +170,11 @@
         <div class="bg-overlay"></div>
         <div class="content container mx-auto px-4 h-full flex flex-col justify-center">
             <nav class="absolute top-0 left-0 w-full py-6">
-                <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="container mx-auto px-4 flex justify-between items-center flex-wrap gap-3">
                     <a href="#" class="text-white text-3xl font-bold">
                         LK조명 <span class="text-blue-400">LED-Korea</span>
                     </a>
-                    <div class="flex items-center space-x-6">
+                    <div class="flex items-center space-x-4 sm:space-x-6">
                         <a href="#services" class="text-white hover:text-blue-300 transition-colors">제품 및 서비스</a>
                         <a href="#partnership" class="text-white hover:text-blue-300 transition-colors">글로벌 파트너십</a>
                         <a href="#contact" class="text-white hover:text-blue-300 transition-colors">문의하기</a>
@@ -169,7 +182,10 @@
                             <i class="fas fa-phone-alt mr-2"></i>
                             1688-8011
                         </a>
-                    </div>
+                    
+                        <a href="index-en.html" class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full transition-colors">
+                            English
+                        </a></div>
                 </div>
             </nav>
             <div class="max-w-4xl">
@@ -506,14 +522,15 @@
     </a>
 
     <script>
-        // Smooth scrolling for anchor links
+        // Smooth scrolling for anchor links (safe guard)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (!href || href === '#') return; // allow default for brand/# top
+                const target = document.querySelector(href);
+                if (!target) return;
                 e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                target.scrollIntoView({ behavior: 'smooth' });
             });
         });
         
