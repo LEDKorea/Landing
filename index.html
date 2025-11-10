@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LK조명 (LED-Korea.com) - LED 가로등 전문 제조업체 | LEDKorea 조명 솔루션</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        
+        * {
+            font-family: 'Pretendard', sans-serif;
+        }
+        
+        .bg-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(30, 58, 138, 0.6));
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero {
+            background-image: url('https://drive.google.com/uc?export=view&id=1e8Rh8qZBLALpIMrqwFYqKhR4W_LzKvJZ');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .service-card {
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border-color: #3B82F6;
+        }
+        
+        .partnership-img {
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .partnership-img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+            z-index: 1;
+        }
+        
+        .partnership-img:hover::before {
+            left: 100%;
+        }
+        
+        .partnership-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .partnership-img img {
+            transition: all 0.4s ease;
+        }
+        
+        .call-button {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            z-index: 999;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .kakao-chat {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+        
+        .kakao-chat:hover {
+            transform: scale(1.1);
+        }
+        
+        .contact-form input, .contact-form textarea {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #3B82F6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #3B82F6, #1D4ED8);
+            border-radius: 2px;
+        }
+        
+        .feature-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .feature-icon {
+            transform: rotateY(360deg);
+        }
+    </style>
+<meta content="가로등, LED, LEDKorea, ledkorea, korealed, street light, lighting korea, 표윤엽, 이상근, 김숭선, 아이존, aizon, 전등, 앨이디, 엘이디, 엘이디코리아, LED가로등, 조명, LED조명, 가로수길, LK조명, 한국조명, LED-Korea, 스트리트라이트, 도로조명" name="keywords"/>
+<meta content="엘이디코리아(LEDKorea)는 혁신적인 LED 가로등과 조명 솔루션을 제공하는 한국의 대표 조명 기업입니다. 글로벌 수출, 기술 제휴, 국제 시장 확장을 통해 세계 조명 산업을 선도하는 LED 전문 제조업체입니다. 표윤엽, 이상근, 김숭선이 이끄는 아이존(aizon) 기술력으로 최고 품질의 가로등 및 전등 솔루션을 제공합니다." name="description"/>
+<meta content="엘이디코리아 | LEDKorea | LED 가로등 전문" property="og:title"/>
+<meta content="엘이디코리아(LEDKorea)는 혁신적인 LED 가로등과 조명 솔루션을 제공하는 한국의 대표 조명 기업입니다. 글로벌 수출, 기술 제휴, 국제 시장 확장을 통해 세계 조명 산업을 선도합니다." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://drive.google.com/uc?export=view&id=1e8Rh8qZBLALpIMrqwFYqKhR4W_LzKvJZ" property="og:image"/>
+<meta content="ko_KR" property="og:locale"/>
+<link rel="canonical" href="https://www.led-korea.com" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="LK조명 LED-Korea" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "LK조명 LED-Korea",
+  "alternateName": ["LEDKorea", "엘이디코리아", "LED Korea"],
+  "url": "https://www.led-korea.com",
+  "logo": "https://www.led-korea.com/logo.png",
+  "description": "LED 가로등 전문 제조업체, 조명 솔루션 제공",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "삼성로85길 39 가리온빌딩 3층",
+    "addressLocality": "강남구",
+    "addressRegion": "서울",
+    "postalCode": "06196",
+    "addressCountry": "KR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+82-1688-8011",
+    "contactType": "customer service",
+    "areaServed": "KR",
+    "availableLanguage": ["Korean", "English"]
+  }
+}
+</script>
+</head>
+<body class="bg-gray-50">
+<!-- Hero Section -->
+<div class="hero">
+<div class="bg-overlay"></div>
+<div class="content container mx-auto px-4 h-full flex flex-col justify-center">
+<!-- Language Selector Bar -->
+<div class="absolute top-0 left-0 w-full bg-gray-900 bg-opacity-50 py-2">
+<div class="container mx-auto px-4 flex justify-end">
+<div class="flex items-center space-x-2">
+<button class="lang-btn px-4 py-1 rounded text-white bg-blue-600 transition-colors" id="lang-ko" onclick="switchLanguage('ko')">
+                            한국어
+                        </button>
+<button class="lang-btn px-4 py-1 rounded text-white hover:bg-blue-600 transition-colors" id="lang-en" onclick="switchLanguage('en')">
+                            English
+                        </button>
+</div>
+</div>
+</div>
+<nav class="absolute top-12 left-0 w-full py-6">
+<div class="container mx-auto px-4 flex justify-between items-center">
+<a class="text-white text-3xl font-bold" href="#">
+<span id="logo-text">LK조명</span> <span class="text-blue-400">LED-Korea</span>
+</a>
+<div class="flex items-center space-x-6">
+<a class="text-white hover:text-blue-300 transition-colors" href="#services" id="nav-services">제품 및 서비스</a>
+<a class="text-white hover:text-blue-300 transition-colors" href="#partnership" id="nav-partnership">글로벌 파트너십</a>
+<a class="text-white hover:text-blue-300 transition-colors" href="#contact" id="nav-contact">문의하기</a>
+<a class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors flex items-center" href="tel:1688-8011">
+<i class="fas fa-phone-alt mr-2"></i>
+                            1688-8011
+                        </a>
+</div>
+</div>
+</nav>
+<div class="max-w-4xl">
+<h1 class="text-6xl md:text-7xl font-bold text-white leading-tight mb-6" id="hero-title">
+                    LED 가로등 조명의 <br/>혁신을 선도합니다
+                </h1>
+<p class="text-2xl text-gray-200 mb-8" id="hero-subtitle">
+                    특허 기술과 글로벌 파트너십으로 <br/>
+                    최고 품질의 LED 가로등 및 조명 솔루션을 제공합니다
+                </p>
+<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+<a class="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 rounded-lg text-xl font-medium transition-colors shadow-2xl" href="#services" id="hero-btn1">
+                        제품 둘러보기
+                    </a>
+<a class="bg-white hover:bg-gray-100 text-blue-600 py-4 px-10 rounded-lg text-xl font-medium transition-colors shadow-2xl" href="#contact" id="hero-btn2">
+                        견적 문의
+                    </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Services Section -->
+<section class="py-24 bg-white" id="services">
+<div class="container mx-auto px-4">
+<div class="text-center mb-20">
+<h2 class="section-title text-5xl font-bold text-gray-900 mb-6" id="services-title">제품 및 서비스</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto mt-8" id="services-subtitle">
+                    LED-Korea는 첨단 기술과 디자인을 결합하여 
+                    에너지 효율적이고 환경친화적인 LED 가로등 조명 솔루션을 제공합니다
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Service 1 -->
+<div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden p-8">
+<div class="feature-icon w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
+<i class="fas fa-road text-4xl text-white"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4" id="service1-title">LED 가로등</h3>
+<p class="text-gray-600 leading-relaxed" id="service1-desc">
+                        거리와 도로변을 밝히는 각종 LED 가로등을 제공합니다. 
+                        뛰어난 밝기와 에너지 효율성으로 안전하고 경제적인 도로 환경을 만듭니다.
+                    </p>
+</div>
+<!-- Service 2 -->
+<div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden p-8">
+<div class="feature-icon w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
+<i class="fas fa-ruler-combined text-4xl text-white"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4" id="service2-title">맞춤형 조명설계</h3>
+<p class="text-gray-600 leading-relaxed" id="service2-desc">
+                        고객의 요구사항에 맞춘 맞춤형 가로등 및 조명설계 서비스를 제공합니다. 
+                        공간의 특성을 고려한 최적의 조명 솔루션을 제안합니다.
+                    </p>
+</div>
+<!-- Service 3 -->
+<div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden p-8">
+<div class="feature-icon w-20 h-20 bg-green-600 rounded-2xl flex items-center justify-center mb-6">
+<i class="fas fa-leaf text-4xl text-white"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4" id="service3-title">친환경 조명</h3>
+<p class="text-gray-600 leading-relaxed" id="service3-desc">
+                        환경을 생각하는 친환경 조명 설계 및 시공 서비스를 제공합니다. 
+                        에너지 절감과 탄소 배출 감소에 기여하는 지속 가능한 솔루션입니다.
+                    </p>
+</div>
+<!-- Service 4 -->
+<div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden p-8">
+<div class="feature-icon w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
+<i class="fas fa-cogs text-4xl text-white"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4" id="service4-title">부품설계 및 제작</h3>
+<p class="text-gray-600 leading-relaxed" id="service4-desc">
+                        각종 조명등 부품의 설계부터 제작, 시공까지 원스톱 서비스를 제공합니다. 
+                        자체 기술력으로 품질과 신뢰성을 보장합니다.
+                    </p>
+</div>
+<!-- Service 5 -->
+<div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden p-8">
+<div class="feature-icon w-20 h-20 bg-purple-600 rounded-2xl flex items-center justify-center mb-6">
+<i class="fas fa-certificate text-4xl text-white"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4" id="service5-title">특허기술 보유</h3>
+<p class="text-gray-600 leading-relaxed" id="service5-desc">
+                        특허기술을 보유한 해외 유명 브랜드의 공식 대리점으로, 
+                        검증된 최고 품질의 제품을 공급합니다.
+                    </p>
+</div>
+<!-- Service 6 -->
+<div class="service-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden p-8">
+<div class="feature-icon w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
+<i class="fas fa-wrench text-4xl text-white"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4" id="service6-title">통합 시공 서비스</h3>
+<p class="text-gray-600 leading-relaxed" id="service6-desc">
+                        설계부터 설치, A/S까지 전문 기술진이 책임지는 통합 시공 서비스로 
+                        고객 만족을 실현합니다.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Partnership Section -->
+<section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-100" id="partnership">
+<div class="container mx-auto px-4">
+<div class="text-center mb-20">
+<h2 class="section-title text-5xl font-bold text-gray-900 mb-6" id="partnership-title">글로벌 파트너십</h2>
+<p class="text-xl text-gray-700 max-w-3xl mx-auto mt-8" id="partnership-subtitle">
+                    세계 유수의 기업들과의 전략적 파트너십을 통해 <br/>
+                    글로벌 시장에서 한국의 LED 기술력을 인정받고 있습니다
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<div class="partnership-img bg-white rounded-2xl shadow-2xl overflow-hidden">
+<img alt="글로벌 수출 계약 - LEDKorea 가로등 해외 수출" class="w-full h-80 object-cover" src="https://drive.google.com/uc?export=view&id=17Xl7d14XLowy3nDFC_uf2bAIswMs2XeW"/>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2" id="partnership1-title">글로벌 수출 계약</h3>
+<p class="text-gray-600" id="partnership1-desc">해외 주요 바이어와의 전략적 파트너십 체결</p>
+</div>
+</div>
+<div class="partnership-img bg-white rounded-2xl shadow-2xl overflow-hidden">
+<img alt="기술 제휴 협약 - LED 조명 기술 제휴" class="w-full h-80 object-cover" src="https://drive.google.com/uc?export=view&id=1xDwAsjjglkcIXGy1RVlvhm3qNeccg1Sp"/>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2" id="partnership2-title">기술 제휴 협약</h3>
+<p class="text-gray-600" id="partnership2-desc">선진 LED 기술 도입 및 공동 개발 추진</p>
+</div>
+</div>
+<div class="partnership-img bg-white rounded-2xl shadow-2xl overflow-hidden">
+<img alt="국제 시장 확대 - 아이존 aizon LED 수출" class="w-full h-80 object-cover" src="https://drive.google.com/uc?export=view&id=1jLsflAvgNlv0rTUuHNeKevDUYp_JN9CP"/>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2" id="partnership3-title">국제 시장 확대</h3>
+<p class="text-gray-600" id="partnership3-desc">아시아, 유럽, 미주 지역으로의 수출 확대</p>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-2xl p-12 max-w-4xl mx-auto">
+<div class="flex flex-col md:flex-row items-center justify-between">
+<div class="mb-6 md:mb-0">
+<h3 class="text-3xl font-bold text-gray-900 mb-4" id="partnership-box-title">대표이사 직접 소통</h3>
+<p class="text-lg text-gray-600" id="partnership-box-desc">
+                            해외 파트너사와의 직접적인 소통으로 <br/>
+                            빠르고 정확한 비즈니스 관계를 구축합니다
+                        </p>
+</div>
+<div class="flex items-center space-x-4">
+<div class="text-center">
+<div class="text-4xl font-bold text-blue-600 mb-2">15+</div>
+<div class="text-gray-600" id="partnership-stat1">파트너 국가</div>
+</div>
+<div class="w-px h-16 bg-gray-300"></div>
+<div class="text-center">
+<div class="text-4xl font-bold text-blue-600 mb-2">50+</div>
+<div class="text-gray-600" id="partnership-stat2">수출 계약</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-white" id="contact">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="section-title text-5xl font-bold text-gray-900 mb-6" id="contact-title">문의하기</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto mt-8" id="contact-subtitle">
+                    LED 가로등 조명 솔루션에 대해 궁금하신 점이 있으신가요? <br/>
+                    전화, 카카오톡 또는 문의 양식으로 언제든지 연락 주세요
+                </p>
+</div>
+<div class="max-w-6xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<form class="contact-form" id="contact-form">
+<div class="mb-6">
+<label class="block text-gray-700 font-medium mb-2 text-lg" for="name">이름 / 회사명</label>
+<input class="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none text-lg" id="name" name="name" required="" type="text"/>
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 font-medium mb-2 text-lg" for="email">이메일</label>
+<input class="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none text-lg" id="email" name="email" required="" type="email"/>
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 font-medium mb-2 text-lg" for="phone">연락처</label>
+<input class="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none text-lg" id="phone" name="phone" required="" type="tel"/>
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 font-medium mb-2 text-lg" for="message">문의 내용</label>
+<textarea class="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none text-lg" id="message" name="message" required="" rows="6"></textarea>
+</div>
+<button class="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 rounded-xl text-xl font-medium transition-colors shadow-lg w-full" type="submit">
+                                문의하기
+                            </button>
+</form>
+</div>
+<div>
+<div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-10 text-white h-full flex flex-col justify-center">
+<h3 class="text-3xl font-bold mb-8" id="contact-info-title">연락처 정보</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mr-5 flex-shrink-0">
+<i class="fas fa-phone-alt text-2xl"></i>
+</div>
+<div>
+<h4 class="text-xl font-semibold mb-2" id="contact-phone">전국 대표번호</h4>
+<p class="text-3xl font-bold">1688-8011</p>
+<p class="text-blue-200 mt-1" id="contact-hours">평일 09:00 - 18:00</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mr-5 flex-shrink-0">
+<i class="fas fa-map-marker-alt text-2xl"></i>
+</div>
+<div>
+<h4 class="text-xl font-semibold mb-2" id="contact-address">본사 위치</h4>
+<p class="text-lg">(우)06196</p>
+<p class="text-lg">서울 강남구 삼성로85길 39</p>
+<p class="text-lg">가리온빌딩 3층</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mr-5 flex-shrink-0">
+<i class="fas fa-industry text-2xl"></i>
+</div>
+<div>
+<h4 class="text-xl font-semibold mb-2" id="contact-factory">파주 1공장 &amp; 연구소</h4>
+<p class="text-lg">경기도 파주시 방촌로 348번길 21-9</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mr-5 flex-shrink-0">
+<i class="fas fa-envelope text-2xl"></i>
+</div>
+<div>
+<h4 class="text-xl font-semibold mb-2" id="contact-email-web">이메일 &amp; 웹사이트</h4>
+<p class="text-lg">info@led-korea.com</p>
+<p class="text-lg">www.LED-Korea.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mr-5 flex-shrink-0">
+<i class="fas fa-comment text-2xl"></i>
+</div>
+<div>
+<h4 class="text-xl font-semibold mb-2" id="contact-kakao">카카오톡 상담</h4>
+<p class="text-lg" id="contact-kakao-desc">실시간 온라인 상담 가능</p>
+<p class="text-blue-200 mt-1" id="contact-kakao-btn">오른쪽 하단 버튼 클릭</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 py-12 text-white">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<h3 class="text-3xl font-bold mb-2"><span id="logo-text">LK조명</span> <span class="text-blue-400">LED-Korea</span></h3>
+<p class="text-gray-400 text-lg" id="footer-tagline">LED 가로등 조명의
